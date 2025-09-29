@@ -1,0 +1,155 @@
+/* Style cơ bản */
+body {
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+}
+
+.homepage-1 {
+    background: url("../resource/background1.png");
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.logo-responsive {
+    max-width: 150px;
+    /* Kích thước logo mặc định */
+    height: auto;
+    /* Giữ tỷ lệ khung hình */
+}
+
+.text-1 {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 48px;
+    /* Font-size mặc định cho text-1 */
+}
+
+.text-2 {
+    font-family: 'Lato', sans-serif;
+    color: white;
+    font-size: 24px;
+    /* Font-size mặc định cho text-2 */
+}
+
+.slogan {
+    background-color: #343a40;
+    /* Màu nền tối để chữ trắng nổi bật */
+    text-align: center;
+}
+
+/* Breakpoint: xs (<576px) */
+@media (max-width: 575.98px) {
+    .logo-responsive {
+        max-width: 80px;
+    }
+
+    .text-1 {
+        font-size: 24px;
+    }
+
+    .text-2 {
+        font-size: 14px;
+    }
+
+    .offcanvas-end {
+        width: 150px !important;
+        /* Đảm bảo ghi đè style Bootstrap */
+        background-color: #343a40;
+    }
+    .navbar-nav .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    
+
+}
+
+/* Breakpoint: sm (≥576px và <768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .logo-responsive {
+        max-width: 100px;
+    }
+
+    .text-1 {
+        font-size: 28px;
+    }
+
+    .text-2 {
+        font-size: 16px;
+    }
+
+    .offcanvas-end {
+        width: 150px !important;
+        background-color: #343a40;
+    }
+    .navbar-nav .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+}
+
+/* Breakpoint: md (≥768px và <992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .logo-responsive {
+        max-width: 120px;
+    }
+
+    .text-1 {
+        font-size: 36px;
+    }
+
+    .text-2 {
+        font-size: 18px;
+    }
+
+    .offcanvas-end {
+        width: 250px !important;
+        /* Đảm bảo ghi đè style Bootstrap */
+        background-color: #343a40;
+    }
+
+    .navbar-nav .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+        /* Căn trái các mục trong d-flex */
+    }
+
+}
+
+/* Breakpoint: lg (≥992px và <1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .text-1 {
+        font-size: 48px;
+    }
+
+    .text-2 {
+        font-size: 24px;
+    }
+}
+
+/* Breakpoint: xl (≥1200px và <1400px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+    .text-1 {
+        font-size: 48px;
+    }
+
+    .text-2 {
+        font-size: 24px;
+    }
+}
+
+/* Breakpoint: xxl (≥1400px) */
+@media (min-width: 1400px) {
+    .text-1 {
+        font-size: 48px;
+    }
+
+    .text-2 {
+        font-size: 24px;
+    }
+}
+
