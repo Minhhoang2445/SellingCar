@@ -1,8 +1,5 @@
-/* Style cơ bản */
 body {
-    background-color: blue;
     width: 100%;
-    height: 100px;
 }
 
 .homepage-1 {
@@ -11,35 +8,28 @@ body {
     width: 100%;
     min-height: 100vh;
 }
-
 .logo-responsive {
     max-width: 150px;
-    /* Kích thước logo mặc định */
     height: auto;
-    /* Giữ tỷ lệ khung hình */
 }
 
 .text-1 {
     font-family: 'Lato', sans-serif;
     color: white;
     font-size: 48px;
-    /* Font-size mặc định cho text-1 */
 }
 
 .text-2 {
     font-family: 'Lato', sans-serif;
     color: white;
     font-size: 24px;
-    /* Font-size mặc định cho text-2 */
 }
 
 .slogan {
     background-color: #343a40;
-    /* Màu nền tối để chữ trắng nổi bật */
     text-align: center;
 }
 
-/* Breakpoint: xs (<576px) */
 @media (max-width: 575.98px) {
     .logo-responsive {
         max-width: 80px;
@@ -55,15 +45,15 @@ body {
 
     .offcanvas-end {
         width: 150px !important;
-        /* Đảm bảo ghi đè style Bootstrap */
         background-color: #343a40;
     }
+
     .navbar-nav .d-flex {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    
+
 
 }
 
@@ -85,11 +75,12 @@ body {
         width: 150px !important;
         background-color: #343a40;
     }
+
     .navbar-nav .d-flex {
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
 }
 
 /* Breakpoint: md (≥768px và <992px) */
@@ -153,3 +144,136 @@ body {
     }
 }
 
+.search-container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    background-color: #071620;
+    padding: 20px;
+    /* Add padding to container */
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.btn-group .btn {
+    border: none;
+    background: none;
+    position: relative;
+    transition: color 0.3s ease;
+    color: #007CC7;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    min-width: 100px;
+    text-align: center;
+}
+
+.btn-check:checked+.btn {
+    border: none;
+    background: none;
+    color: #007CC7;
+}
+
+.btn-check:checked+.btn::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    /* Underline spans full text width */
+    height: 2px;
+    background-color: #007CC7;
+}
+
+.search-container .btn:hover {
+    background: none;
+    color: #005b99;
+}
+
+.main-search {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.main-search .row {
+    width: 100%;
+    flex-wrap: nowrap;
+}
+
+.main-search .col {
+    flex: 1;
+}
+
+.main-search .form-control,
+.main-search .form-select {
+    background-color: #fff;
+    color: #000;
+}
+.price-text{
+    color:white;
+    font-size: 15px;
+}
+.search-button{
+    padding:20px;
+}
+.homepage-2 {
+    background: url("../resource/background2.png");
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+}
+.recommended-car{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    display: inline-flex;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.ribbon {
+    position: absolute;
+    top: 0;
+    left: 0;   
+}
+.card-img-top {
+    width: 90%;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.card_css{
+    background-color: #0B0C10;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    border: #007CC7 solid 1px;
+    border-radius: 0px;
+}
+.new_css{
+    font-size:14px;
+    background-color: #0B0C10;
+    color: #007CC7 ;
+    border: #007CC7 solid 1px;
+    font-weight: bold;
+}
+.card-title{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    min-height: 3rem;
+    font-size: 20px;
+}
