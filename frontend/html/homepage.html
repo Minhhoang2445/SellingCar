@@ -80,15 +80,16 @@
             <h2 class="text-2 mb-0">amet consectetur adipiscing elit.</h2>
         </div>
         <div class="container mt-5 search-container  ">
-            <div class="btn-group" role="group">
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-                <label class="btn " for="btnradio1">All</label>
+            <div class="btn-group1 " role="group">
+                <input type="radio" class=" btn-check btn-check1" name="btnradio" id="btnradio1" autocomplete="off"
+                    checked>
+                <label class="btn btn1 " for="btnradio1">All</label>
 
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-                <label class="btn " for="btnradio2">New</label>
+                <input type="radio" class="btn-check btn-check1" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn btn1 " for="btnradio2">New</label>
 
-                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-                <label class="btn " for="btnradio3">Used</label>
+                <input type="radio" class="btn-check btn-check1" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn btn1 " for="btnradio3">Used</label>
             </div>
             <div class="main-search">
                 <form class="row g-3 mb-3">
@@ -115,7 +116,7 @@
                     <div class="col-md-2">
                         <div class="price-text ">
                             Price Range <br>
-                            $.0 - $3,000,000.00
+                            $0-$3,000,000
                         </div>
                     </div>
                     <div class="col-md-4 bg-primary">
@@ -130,9 +131,19 @@
     </div>
     <div class="homepage-2">
         <div class="container recommended-car">
-            <h2 class="text-white mb-4">Recommended Car</h2>
+            <h2 class="text-white mb-4 ms-5">Recommended Car</h2>
+            <div class="d-flex justify-content-start ms-5 mb-4">
+                <div class="btn-group btn-group1" role="group">
+                    <input type="radio" class="btn-check btn-check1" name="btnradio-recommendedcar" id="btnradio4"
+                        autocomplete="off" checked>
+                    <label class="btn btn1" for="btnradio4">New</label>
+
+                    <input type="radio" class="btn-check btn-check1" name="btnradio-recommendedcar" id="btnradio5"
+                        autocomplete="off">
+                    <label class="btn btn1" for="btnradio5">Used</label>
+                </div>
+            </div>
             <div class="row g-4"> <!-- g-4 tạo khoảng cách đều giữa các card -->
-        
                 <!-- Card 1: Tesla -->
                 <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                     <div class="card position-relative card_css" style="width: 20rem;">
@@ -143,7 +154,7 @@
                             <h5 class="card-title mt-2">Tesla Model 3 Standard Range Plus</h5>
                             <p class="fw-bold fs-4 text-primary mb-1">$35,000</p>
                             <p class="mb-3">Florida, USA</p>
-        
+
                             <div class="row g-2">
                                 <div class="col-4 d-flex align-items-center">
                                     <span class="me-2">📅</span><small>2024</small>
@@ -158,7 +169,7 @@
                                     <span class="me-2">👥</span><small>5 seats</small>
                                 </div>
                             </div>
-        
+
                             <hr class="bg-white">
                             <div class="text-white">
                                 <span class="fs-4">★★★★☆</span>
@@ -167,7 +178,7 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- Card 2: Ford -->
                 <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                     <div class="card position-relative card_css" style="width: 20rem;">
@@ -178,7 +189,7 @@
                             <h5 class="card-title mt-2">Ford F-250 Super Duty</h5>
                             <p class="fw-bold fs-4 text-primary mb-1">$82,000</p>
                             <p class="mb-3">Milan, Italy</p>
-        
+
                             <div class="row g-2">
                                 <div class="col-4 d-flex align-items-center">
                                     <span class="me-2">📅</span><small>2024</small>
@@ -193,7 +204,7 @@
                                     <span class="me-2">👥</span><small>5 seats</small>
                                 </div>
                             </div>
-        
+
                             <hr class="bg-white">
                             <div class="text-white">
                                 <span class="fs-4">★★★★★</span>
@@ -202,7 +213,7 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <!-- Card 3: Toyota -->
                 <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                     <div class="card position-relative card_css" style="width: 20rem;">
@@ -213,7 +224,7 @@
                             <h5 class="card-title mt-2">Toyota Corolla Altis</h5>
                             <p class="fw-bold fs-4 text-primary mb-1">$28,000</p>
                             <p class="mb-3">Tokyo, Japan</p>
-        
+
                             <div class="row g-2">
                                 <div class="col-4 d-flex align-items-center">
                                     <span class="me-2">📅</span><small>2024</small>
@@ -228,7 +239,7 @@
                                     <span class="me-2">👥</span><small>5 seats</small>
                                 </div>
                             </div>
-        
+
                             <hr class="bg-white">
                             <div class="text-white">
                                 <span class="fs-4">★★★☆☆</span>
@@ -237,13 +248,98 @@
                         </div>
                     </div>
                 </div>
-        
+
             </div>
         </div>
-
+    
+    <div class="container compare-car mt-5">
+        <h2 class="text-white mb-4 ms-5">Compare Car</h2>
+        <div class="row justify-content-center align-items-center g-4 position-relative">
+    
+            <!-- Card 1 -->
+            <div class="col-12 col-md-5 d-flex justify-content-center">
+                <div class="card position-relative card_css" style="width: 25rem;">
+                    <div class="ribbon"><img src="../resource/corner_ribbon.png" alt="Featured" /></div>
+                    <img src="../resource/Tesla.png" class="card-img-top" alt="Car Image">
+                    <div class="card-body">
+                        <span class="badge new_css">New</span>
+                        <h5 class="card-title mt-2">Tesla Model 3</h5>
+                        <p class="fw-bold fs-4 text-primary mb-1">$35,000</p>
+                        <p class="mb-3">Florida, USA</p>
+                        <div class="row g-2">
+                            <div class="col-4 d-flex align-items-center">
+                                <span class="me-2">📅</span><small>2024</small>
+                            </div>
+                            <div class="col-8 d-flex align-items-center">
+                                <span class="me-2">⚙️</span><small>Rear-Wheel Drive</small>
+                            </div>
+                            <div class="col-4 d-flex align-items-center">
+                                <span class="me-2">⛽</span><small>Gasoline</small>
+                            </div>
+                            <div class="col-8 d-flex align-items-center">
+                                <span class="me-2">👥</span><small>5 seats</small>
+                            </div>
+                        </div>
+                        
+                        <hr class="bg-white">
+                        <div class="text-white">
+                            <span class="fs-4">★★★☆☆</span>
+                            <span class="fs-5">(8 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- VS Circle -->
+            <div class="col-12 col-md-2 d-flex justify-content-center">
+                <div class="vs-circle">VS</div>
+            </div>
+    
+            <!-- Card 2 -->
+            <div class="col-12 col-md-5 d-flex justify-content-center">
+                <div class="card position-relative card_css" style="width: 25rem;">
+                    <div class="ribbon"><img src="../resource/corner_ribbon.png" alt="Featured" /></div>
+                    <img src="../resource/Ford.png" class="card-img-top" alt="Car Image">
+                    <div class="card-body">
+                        <span class="badge new_css">New</span>
+                        <h5 class="card-title mt-2">Ford F-250 Super Duty</h5>
+                        <p class="fw-bold fs-4 text-primary mb-1">$82,000</p>
+                        <p class="mb-3">Milan, Italy</p>
+                        <div class="row g-2">
+                            <div class="col-4 d-flex align-items-center">
+                                <span class="me-2">📅</span><small>2024</small>
+                            </div>
+                            <div class="col-8 d-flex align-items-center">
+                                <span class="me-2">⚙️</span><small>Rear-Wheel Drive</small>
+                            </div>
+                            <div class="col-4 d-flex align-items-center">
+                                <span class="me-2">⛽</span><small>Gasoline</small>
+                            </div>
+                            <div class="col-8 d-flex align-items-center">
+                                <span class="me-2">👥</span><small>5 seats</small>
+                            </div>
+                        </div>
+                        
+                        <hr class="bg-white">
+                        <div class="text-white">
+                            <span class="fs-4">★★★☆☆</span>
+                            <span class="fs-5">(8 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
         </div>
+        <!-- Nút Compare Car -->
+        <div class="d-flex justify-content-center mt-4">
+            <a href="#compare-section"
+                class="btn btn-outline-light text-white fw-bold d-flex align-items-center justify-content-center border-white"
+                style="width: 700px; height: 50px;">
+                Compare Car
+            </a>
+        </div>
+        
     </div>
-
     </div>
 </body>
 
