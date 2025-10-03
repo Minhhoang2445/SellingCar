@@ -156,13 +156,13 @@ body {
     /* Add padding to container */
 }
 
-.btn-group {
+.btn-group1 {
     display: flex;
     justify-content: center;
     align-self: center;
 }
 
-.btn-group .btn {
+.btn-group1 .btn1 {
     border: none;
     background: none;
     position: relative;
@@ -174,13 +174,13 @@ body {
     text-align: center;
 }
 
-.btn-check:checked+.btn {
+.btn-check1:checked+.btn1 {
     border: none;
     background: none;
     color: #007CC7;
 }
 
-.btn-check:checked+.btn::after {
+.btn-check1:checked+.btn1::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -192,7 +192,7 @@ body {
     background-color: #007CC7;
 }
 
-.search-container .btn:hover {
+.search-container .btn1:hover {
     background: none;
     color: #005b99;
 }
@@ -231,18 +231,25 @@ body {
     background-size: cover;
     width: 100%;
     min-height: 100vh;
+    /* Keeps minimum height, but now extends naturally with content */
+    display: flex;
+    /* Enable flexbox for stacking children vertically */
+    flex-direction: column;
+    align-items: center;
+    /* Horizontal center for all child containers */
+    justify-content: flex-start;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     position: relative;
 }
-.recommended-car{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -10%);
-    display: inline-flex;
-    gap: 20px;
+
+.recommended-car {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 5rem;
 }
 .ribbon {
     position: absolute;
@@ -276,4 +283,64 @@ body {
     overflow: hidden;
     min-height: 3rem;
     font-size: 20px;
+}
+.compare-car {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    }
+.vs-circle {
+    width: 106px;
+    height:106px;
+    border-radius: 50%;
+    background-color: #007bff;
+    /* xanh dương Bootstrap */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 991.98px) {
+    .homepage-2 {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+
+    .recommended-car {
+        margin-bottom: 3rem;
+    }
+    .row.g-4 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .compare-car .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vs-circle {
+        order: -1;
+        margin-bottom: 1rem;
+    }
+}
+.btn-outline-light.border-white {
+    background-color: transparent !important;
+    border: 1px solid white !important;
+    color: white !important;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light.border-white:hover {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    border-color: rgba(255, 255, 255, 0.8) !important;
+    color: white !important;
+    transform: scale(1.05);
 }
