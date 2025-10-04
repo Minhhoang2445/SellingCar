@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0B0C10;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  background: #12232E;
+}
+
+.logo img {
+  height: 32px;
+  width: 117.62963104248047;
+}
+
+.navbar a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  width: 564px;
+  height: 24px;
+  gap: 72px;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Log In */
+.login {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  width: 94px;
+  height: 40px;
+  padding: 8px 14px;
+  border-radius: 3px;
+  color: white;
+}
+
+.login i {
+  margin-right: 6px;
+}
+
+/* Language */
+.language {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.language i {
+  margin-right: 6px;
+  color: white;
+}
+.dropdown {
+  position: relative;
+}
+.dropbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  width: 69px;
+  height: 24px;
+  gap: 4px;
+  color: white;
+}
+
+.dropbtn i {
+  width: 16.000003814697266;
+  height: 16.000003814697266;
+  top: 1px;
+  left: 1px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+  min-width: 80px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Main */
+.container {
+  display: flex;
+  gap:32px;
+  justify-content: center;
+  align-items: stretch;
+  width:100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  box-sizing: border-box;
+}
+
+.form-container {
+  flex: 0 0 420px;
+  width:100%;
+  max-width: 400px;
+  background: #0B0C10;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  margin:auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: white;
+  
+
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border:none;
+  box-sizing: border-box;
+  background: #152836;
+}
+
+.btn {
+  width:100%;
+  background: #007CC7;
+  color: #ffffff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.login-link {
+  font-size: 15px;
+  text-align: center;
+  color:white;
+}
+.register-link a {
+    color:#007bff;
+    text-decoration: underline;
+}
+/* Welcome Box */
+.welcome-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  min-height: 400px; /* figma 451px */
+  padding:30px;
+  border-radius: 8px;
+  /* bo góc content */
+  outline:  2px solid white;
+  outline-offset: -30px;
+  color:white;
+  background: #12232E;
+  
+}
+
+.logo-box {
+  width: 263px;
+  height: 63px;
+  top: 70px;
+  left: 118px;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Footer */
+.footer {
+  padding: 20px 0;
+  background: #12232E;
+  color: white;
+}
+.footer-content{
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.footer-line{
+  text-align: center;
+  margin: 5px auto;
+  max-width: 100%;
+}
+.footer-line img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.footer-logo{
+  text-align: center;
+  margin: 10px 0;
+}
+.footer-logo img {
+  width: 138px;
+  height: 37px;
+}
+.footer-box {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 30px;
+  margin-top: 15px;
+  align-items: start;
+  padding: 0 205px;
+}
+
+.collum1{
+  text-align: left;
+}
+
+.collum2{
+  text-align: center;
+}
+.collum3{
+  text-align: right;
+}
+.footer-box p strong{
+ display: block;
+ margin-bottom: 4px;
+}
+.footer-box p {
+  margin: 3px 0;
+  font-size: 14px;
+}
+
+.footer-social{
+  margin-top: 10px;
+}
+
+.footer-social a {
+  color: white;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.footer-social a:hover {
+  color: #007bff;
+}
+
+.footer-copy{
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  margin-top: 6px;
+}
+
