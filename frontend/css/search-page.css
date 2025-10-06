@@ -1,0 +1,34 @@
+body {
+    width: 100%;
+}
+.homepage-1 {
+    background: url("../resource/background1.png");
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+.search-container {
+    
+    background-color: #071620 !important;
+}
+
+.pt-5 {
+    padding-top: 3rem !important;
+}
+
+/* Responsive: Trên mobile, search form cách logo một chút */
+@media (max-width: 767.98px) {
+    .min-vh-100 {
+        padding-top: 4rem;
+    }
+
+    .logo-responsive {
+        max-width: 80px;
+    }
+}
+
+@media (min-width: 768px) {
+    .min-vh-100 {
+        padding-top: 2rem;
+    }
+}

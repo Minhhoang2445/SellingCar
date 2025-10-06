@@ -12,8 +12,6 @@
     <!-- Latest compiled JavaScript -->
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="../css/homepage.css">
-
-
 </head>
 
 <body>
@@ -40,6 +38,9 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Sell</a>
+                            </li>
+                            <li class="nav-item d-lg-none d-md-none">
+                                <a class="nav-link" href="search-page.html">Search</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="articleDropdown" role="button"
@@ -73,13 +74,12 @@
                 </div>
             </div>
         </nav>
-        <!-- Slogan với ba phần text -->
         <div class="container pt-5 ">
             <h2 class="text-1 mb-2">Find your dream car</h2>
             <h2 class="text-2 mb-2">Lorem ipsum dolor sit.</h2>
             <h2 class="text-2 mb-0">amet consectetur adipiscing elit.</h2>
         </div>
-        <div class="container mt-5 search-container  ">
+        <div class="container mt-5 search-container d-none d-md-block">
             <div class="btn-group1 " role="group">
                 <input type="radio" class=" btn-check btn-check1" name="btnradio" id="btnradio1" autocomplete="off"
                     checked>
@@ -143,8 +143,7 @@
                     <label class="btn btn1" for="btnradio5">Used</label>
                 </div>
             </div>
-            <div class="row g-4"> <!-- g-4 tạo khoảng cách đều giữa các card -->
-                <!-- Card 1: Tesla -->
+            <div class="row g-4">
                 <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                     <div class="card position-relative card_css" style="width: 20rem;">
                         <div class="ribbon"><img src="../resource/corner_ribbon.png" alt="Featured" /></div>
@@ -179,7 +178,6 @@
                     </div>
                 </div>
 
-                <!-- Card 2: Ford -->
                 <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                     <div class="card position-relative card_css" style="width: 20rem;">
                         <div class="ribbon"><img src="../resource/corner_ribbon.png" alt="Featured" /></div>
@@ -214,7 +212,6 @@
                     </div>
                 </div>
 
-                <!-- Card 3: Toyota -->
                 <div class="col-12 col-sm-6 col-lg-4 d-flex justify-content-center">
                     <div class="card position-relative card_css" style="width: 20rem;">
                         <div class="ribbon"><img src="../resource/corner_ribbon.png" alt="Featured" /></div>
@@ -251,95 +248,234 @@
 
             </div>
         </div>
-    
-    <div class="container compare-car mt-5">
-        <h2 class="text-white mb-4 ms-5">Compare Car</h2>
-        <div class="row justify-content-center align-items-center g-4 position-relative">
-    
-            <!-- Card 1 -->
-            <div class="col-12 col-md-5 d-flex justify-content-center">
-                <div class="card position-relative card_css" style="width: 25rem;">
-                    <div class="ribbon"><img src="../resource/corner_ribbon.png" alt="Featured" /></div>
-                    <img src="../resource/Tesla.png" class="card-img-top" alt="Car Image">
-                    <div class="card-body">
-                        <span class="badge new_css">New</span>
-                        <h5 class="card-title mt-2">Tesla Model 3</h5>
-                        <p class="fw-bold fs-4 text-primary mb-1">$35,000</p>
-                        <p class="mb-3">Florida, USA</p>
-                        <div class="row g-2">
-                            <div class="col-4 d-flex align-items-center">
-                                <span class="me-2">📅</span><small>2024</small>
+
+        <div class="container compare-car mt-5">
+            <h2 class="text-white mb-4 ms-5">Compare Car</h2>
+            <div class="row justify-content-center align-items-center g-4 position-relative">
+
+                <div class="col-12 col-md-5 d-flex justify-content-center">
+                    <div class="card position-relative card_css" style="width: 25rem;">
+                        <div class="ribbon"><img src="../resource/corner_ribbon.png" alt="Featured" /></div>
+                        <img src="../resource/Tesla.png" class="card-img-top" alt="Car Image">
+                        <div class="card-body">
+                            <span class="badge new_css">New</span>
+                            <h5 class="card-title mt-2">Tesla Model 3</h5>
+                            <p class="fw-bold fs-4 text-primary mb-1">$35,000</p>
+                            <p class="mb-3">Florida, USA</p>
+                            <div class="row g-2">
+                                <div class="col-4 d-flex align-items-center">
+                                    <span class="me-2">📅</span><small>2024</small>
+                                </div>
+                                <div class="col-8 d-flex align-items-center">
+                                    <span class="me-2">⚙️</span><small>Rear-Wheel Drive</small>
+                                </div>
+                                <div class="col-4 d-flex align-items-center">
+                                    <span class="me-2">⛽</span><small>Gasoline</small>
+                                </div>
+                                <div class="col-8 d-flex align-items-center">
+                                    <span class="me-2">👥</span><small>5 seats</small>
+                                </div>
                             </div>
-                            <div class="col-8 d-flex align-items-center">
-                                <span class="me-2">⚙️</span><small>Rear-Wheel Drive</small>
-                            </div>
-                            <div class="col-4 d-flex align-items-center">
-                                <span class="me-2">⛽</span><small>Gasoline</small>
-                            </div>
-                            <div class="col-8 d-flex align-items-center">
-                                <span class="me-2">👥</span><small>5 seats</small>
+
+                            <hr class="bg-white">
+                            <div class="text-white">
+                                <span class="fs-4">★★★☆☆</span>
+                                <span class="fs-5">(8 reviews)</span>
                             </div>
                         </div>
-                        
-                        <hr class="bg-white">
-                        <div class="text-white">
-                            <span class="fs-4">★★★☆☆</span>
-                            <span class="fs-5">(8 reviews)</span>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-2 d-flex justify-content-center">
+                    <div class="vs-circle">VS</div>
+                </div>
+
+                <div class="col-12 col-md-5 d-flex justify-content-center">
+                    <div class="card position-relative card_css" style="width: 25rem;">
+                        <div class="ribbon"><img src="../resource/corner_ribbon.png" alt="Featured" /></div>
+                        <img src="../resource/Ford.png" class="card-img-top" alt="Car Image">
+                        <div class="card-body">
+                            <span class="badge new_css">New</span>
+                            <h5 class="card-title mt-2">Ford F-250 Super Duty</h5>
+                            <p class="fw-bold fs-4 text-primary mb-1">$82,000</p>
+                            <p class="mb-3">Milan, Italy</p>
+                            <div class="row g-2">
+                                <div class="col-4 d-flex align-items-center">
+                                    <span class="me-2">📅</span><small>2024</small>
+                                </div>
+                                <div class="col-8 d-flex align-items-center">
+                                    <span class="me-2">⚙️</span><small>Rear-Wheel Drive</small>
+                                </div>
+                                <div class="col-4 d-flex align-items-center">
+                                    <span class="me-2">⛽</span><small>Gasoline</small>
+                                </div>
+                                <div class="col-8 d-flex align-items-center">
+                                    <span class="me-2">👥</span><small>5 seats</small>
+                                </div>
+                            </div>
+
+                            <hr class="bg-white">
+                            <div class="text-white">
+                                <span class="fs-4">★★★☆☆</span>
+                                <span class="fs-5">(8 reviews)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-center mt-4">
+                <a href="#compare-section"
+                    class="btn btn-outline-light text-white fw-bold d-flex align-items-center justify-content-center border-white"
+                    style="width: 700px; height: 50px;">
+                    Compare Car
+                </a>
+            </div>
+        </div>
+        <div class="container my-5 ">
+            <div class="d-flex justify-content-start ms-5 mb-4">
+                <div class="btn-group btn-group1 ms-5" role="group">
+                    <input type="radio" class="btn-check btn-check1" name="btnradio-news" id="btnradio6"
+                        autocomplete="off" checked>
+                    <label class="btn btn1" for="btnradio6">News</label>
+                    <input type="radio" class="btn-check btn-check1" name="btnradio-news" id="btnradio7"
+                        autocomplete="off">
+                    <label class="btn btn1" for="btnradio7">Reviews</label>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-5 mb-4">
+                    <div class="card news-card h-100" style="border-radius: 0;">
+                        <div class="news-image-left" style="height: 45%; position: relative;">
+                            <img src="../resource/news3.png" class="card-img-top h-100" alt="News Image"
+                                style="width: 100%; height: 100%; object-fit: cover; margin: 0; padding: 0; border-radius: 0;">
+                            <span class="date-badge ">03/10/2025</span>
+                        </div>
+                        <div class="card-body d-flex flex-column" style="flex: 1;">
+                            <h1 class="card-title">Etiam Eget</h1>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Etiam eget
+                                praesent gravida sed rutrum suspendisse eu.</p>
+                            <div class="author-section mt-auto">
+                                <img src="../resource/news1.png" class="author-image" alt="Author">
+                                <span class="author_name">Tác giả A</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-5">
+                    <div class="card mb-4 news-card" style="border-radius: 0;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../resource/news1.png" class="img-fluid" alt="News Image 1"
+                                    style="width: 100%; height: 100%; object-fit: cover; margin: 0; padding: 0; border-radius: 0;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">A New Car</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="author-section">
+                                        <img src="../resource/news1.png" class="author-image" alt="Author">
+                                        <span class="author_name">Tác giả B</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card news-card" style="border-radius: 0;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../resource/news2.png" class="img-fluid" alt="News Image 2"
+                                    style="width: 100%; height: 100%; object-fit: cover; margin: 0; padding: 0; border-radius: 0;">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">A New Car</h5>
+                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                    <div class="author-section">
+                                        <img src="../resource/news2.png" class="author-image" alt="Author">
+                                        <span class="author_name">Tác giả C</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-    
-            <!-- VS Circle -->
-            <div class="col-12 col-md-2 d-flex justify-content-center">
-                <div class="vs-circle">VS</div>
-            </div>
-    
-            <!-- Card 2 -->
-            <div class="col-12 col-md-5 d-flex justify-content-center">
-                <div class="card position-relative card_css" style="width: 25rem;">
-                    <div class="ribbon"><img src="../resource/corner_ribbon.png" alt="Featured" /></div>
-                    <img src="../resource/Ford.png" class="card-img-top" alt="Car Image">
-                    <div class="card-body">
-                        <span class="badge new_css">New</span>
-                        <h5 class="card-title mt-2">Ford F-250 Super Duty</h5>
-                        <p class="fw-bold fs-4 text-primary mb-1">$82,000</p>
-                        <p class="mb-3">Milan, Italy</p>
-                        <div class="row g-2">
-                            <div class="col-4 d-flex align-items-center">
-                                <span class="me-2">📅</span><small>2024</small>
-                            </div>
-                            <div class="col-8 d-flex align-items-center">
-                                <span class="me-2">⚙️</span><small>Rear-Wheel Drive</small>
-                            </div>
-                            <div class="col-4 d-flex align-items-center">
-                                <span class="me-2">⛽</span><small>Gasoline</small>
-                            </div>
-                            <div class="col-8 d-flex align-items-center">
-                                <span class="me-2">👥</span><small>5 seats</small>
-                            </div>
-                        </div>
-                        
-                        <hr class="bg-white">
-                        <div class="text-white">
-                            <span class="fs-4">★★★☆☆</span>
-                            <span class="fs-5">(8 reviews)</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    
         </div>
-        <!-- Nút Compare Car -->
-        <div class="d-flex justify-content-center mt-4">
-            <a href="#compare-section"
-                class="btn btn-outline-light text-white fw-bold d-flex align-items-center justify-content-center border-white"
-                style="width: 700px; height: 50px;">
-                Compare Car
-            </a>
-        </div>
-        
     </div>
+    <div class="homepage-introduce">
+        <div class="container">
+            <h2 class="aboutus-title">About Us</h2>
+        </div>
+        <div class="container aboutus-content pb-5 px-1 px-lg-0">
+            <div class="row g-4 align-items-center ">
+                <div class="col-12 col-md-7 order-first order-md-last order-custom-last">
+                    <img src="../resource/introduce-car.png" class="img-fluid rounded w-100" alt="About Us Image">
+                </div>
+
+                <div class="col-12 col-md-5 order-last order-md-first order-custom-first">
+                    <p class="aboutus-text text-white mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                        vel
+                        aliquet tortor ut sit sit. Velit imperdiet integer
+                        elementum a scelerisque pulvinar venenatis sodales. Quis nulla euismod feugiat at interdum in.
+                        Venenatis arcu semper
+                        lectus quis sit in rhoncus auctor.</p>
+
+                    <div class="row g-2 g-md-3">
+                        <div class="row g-2">
+                            <div class="col-6 col-md-6">
+                                <div class="text-center text-white">
+                                    <h3 class="mb-1 statistic fs-4 fs-md-3">150</h3>
+                                    <hr class="w-100 stat-line1">
+                                    <div class="w-50 ms-0 border-bottom stat-line2">
+                                        &nbsp;
+                                    </div>
+                                    <p class="statistic-title mb-0 small fs-6 fs-md-5">Vehicle in stock</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-6">
+                                <div class="text-center text-white">
+                                    <h3 class="mb-1 statistic fs-4 fs-md-3">40</h3>
+                                    <hr class="w-100 stat-line1">
+                                    <div class="w-50 ms-0 border-bottom stat-line2">
+                                        &nbsp;
+                                    </div>
+                                    <p class="statistic-title mb-0 small fs-6 fs-md-5">Sold Car</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-2">
+                            <div class="col-6 col-md-6">
+                                <div class="text-center text-white">
+                                    <h3 class="mb-1 statistic fs-4 fs-md-3">38</h3>
+                                    <hr class="w-100 stat-line1">
+                                    <div class="w-50 ms-0 border-bottom stat-line2">
+                                        &nbsp;
+                                    </div>
+                                    <p class="statistic-title mb-0 small fs-6 fs-md-5">Happy customer</p>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-6">
+                                <div class="text-center text-white">
+                                    <h3 class="mb-1 statistic fs-4 fs-md-3">5</h3>
+                                    <hr class="w-100 stat-line1">
+                                    <div class="w-50 ms-0 border-bottom stat-line2">
+                                        &nbsp;
+                                    </div>
+                                    <p class="statistic-title mb-0 small fs-6 fs-md-5">Award</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
