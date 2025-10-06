@@ -337,8 +337,87 @@
                 style="width: 700px; height: 50px;">
                 Compare Car
             </a>
-        </div>
+        </div>       
+    </div>
+    <div class="container  my-5 ">
+        <div class="d-flex justify-content-start ms-5 mb-4">
+            <div class="btn-group btn-group1" role="group">
+                <input type="radio" class="btn-check btn-check1" name="btnradio-news" id="btnradio6"
+                    autocomplete="off" checked>
+                <label class="btn btn1" for="btnradio6">New</label>
         
+                <input type="radio" class="btn-check btn-check1" name="btnradio-news" id="btnradio7"
+                    autocomplete="off">
+                <label class="btn btn1" for="btnradio7">Used</label>
+            </div>
+        </div>
+        <div class="row justify-content-center ">
+            <!-- News card bên trái (lớn) -->
+            <div class="col-md-5 mb-4">
+                <div class="card news-card" style="border-radius: 0;"> <!-- Loại bỏ bo góc bằng border-radius: 0 -->
+                    <div class="news-image-left">
+                        <img src="../resource/news3.png" class="card-img-top" alt="News Image"
+                            style="width: 100%; height: auto; object-fit: cover; margin: 0; padding: 0; border-radius: 0;">
+                        <!-- Ép full width, loại bỏ margin/padding, fit cover để lấp đầy -->
+                        <span class="date-badge">03/10/2025</span>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title">Etiam Eget</h1>
+                        <p class="card-text ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eget praesent
+                            gravida sed rutrum suspendisse eu.</p>
+                        <div class="author-section">
+                            <img src="../resource/news1.png" class="author-image" alt="Author">
+                            <span>Tác giả A</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- News cards bên phải (2 cards xếp chồng) -->
+            <div class="col-md-6">
+                <!-- News card phải 1 -->
+                <div class="card mb-4 news-card" style="border-radius: 0;"> <!-- Loại bỏ bo góc -->
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../resource/news1.png" class="img-fluid rounded-start" alt="News Image 1"
+                                style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
+                            <!-- Loại bỏ rounded nếu cần, nhưng giữ img-fluid để fit -->
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">A New Car</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="author-section">
+                                    <img src="../resource/news1.png" class="author-image" alt="Author">
+                                    <span>Tác giả B</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- News card phải 2 -->
+                <div class="card news-card" style="border-radius: 0;"> <!-- Loại bỏ bo góc -->
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="../resource/news2.png" class="img-fluid" alt="News Image 2"
+                                style="border-top-left-radius: 0; border-bottom-left-radius: 0;">
+                            <!-- Thêm img-fluid để fit, loại bỏ rounded -->
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">A New Car</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                <div class="author-section">
+                                    <img src="../resource/news2.png" class="author-image" alt="Author">
+                                    <span>Tác giả C</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     </div>
 </body>
