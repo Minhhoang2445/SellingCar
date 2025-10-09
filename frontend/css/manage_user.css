@@ -1,0 +1,28 @@
+body {
+    background-color: #1a1a1a;
+    font-family: 'Lato', sans-serif;
+    color: #f8f9fa;
+}
+
+.logo-responsive {
+    max-height: 40px;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+@media (max-width: 575.98px) {
+    .logo-responsive {
+        max-width: 80px;
+    }
+    .offcanvas-end {
+        width: 150px !important;
+        background-color: #343a40;
+    }
+    .navbar-nav .d-flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

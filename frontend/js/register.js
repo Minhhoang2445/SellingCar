@@ -76,8 +76,33 @@ document.addEventListener("DOMContentLoaded", function () {
     e.preventDefault();
 
     if (validateForm()) {
-      alert("Registration successful!");
+      const usersString = localStorage.getItem("users") || "[]";
+      const users = JSON.parse(usersString);
+
+      const newUser = {
+        name: nameInput.value.trim(),
+        email: emailInput.value.trim(),
+        phone: phoneInput.value.trim(),
+        password: passwordInput.value.trim(), 
+      };
+
+      const emailExists = users.some(user => user.email === newUser.email);
+
+      if (emailExists) {
+        alert("Email này đã được đăng ký. Vui lòng sử dụng một email khác.");
+        return; 
+      }
+
+      users.push(newUser);
+
+      localStorage.setItem("users", JSON.stringify(users));
+
+      alert("Đăng ký thành công!");
+
+      form.reset(); 
+
       location.href = "../html/homepage.html"; 
     }
   });
 });
+
