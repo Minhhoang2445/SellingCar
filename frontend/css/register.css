@@ -135,6 +135,11 @@ body {
   border-radius: 8px;
   box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
   margin:auto;
+  
+}
+
+.input {
+  color: white;
 }
 
 form label {
@@ -154,11 +159,48 @@ form input {
   border:none;
   box-sizing: border-box;
   background: #152836;
+  
 }
+
+input {
+  color:white;
+}
+
+.rules {
+  list-style: none;
+  padding-left: 0;
+  font-size: 13px;
+  color: white;
+  margin-top: 6px;
+  display: none; /* Ẩn mặc định */
+}
+
+.rules li {
+  margin-bottom: 4px;
+  padding-left: 18px;
+  position: relative;
+}
+
+.rules li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: white;
+}
+
+.rules li.valid {
+  color: #007bff; 
+}
+
+.rules li.valid::before {
+  content: "✔";
+  color: #007bff;
+}
+
 
 .btn {
   width:100%;
-  background: #007CC7;
+  background: #0056b3;
   color: #ffffff;
   border: none;
   border-radius: 3px;

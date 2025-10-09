@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: "lato", sans-serif;
   background: #0B0C10;
 }
 
@@ -54,6 +54,8 @@ body {
 .login i {
   margin-right: 6px;
 }
+
+
 
 /* Language */
 .language {
@@ -173,7 +175,7 @@ form input {
   background: #0056b3;
 }
 
-.login-link {
+.register-link {
   font-size: 15px;
   text-align: center;
   color:white;
