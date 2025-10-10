@@ -71,19 +71,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
     return true;
   }
-
   form.addEventListener("submit", function (e) {
     e.preventDefault();
 
     if (validateForm()) {
       const usersString = localStorage.getItem("users") || "[]";
       const users = JSON.parse(usersString);
-
+      
       const newUser = {
         name: nameInput.value.trim(),
         email: emailInput.value.trim(),
         phone: phoneInput.value.trim(),
-        password: passwordInput.value.trim(), 
+        password: passwordInput.value.trim(),
+        role: "user"
       };
 
       const emailExists = users.some(user => user.email === newUser.email);

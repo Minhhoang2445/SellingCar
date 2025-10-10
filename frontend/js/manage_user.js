@@ -1,12 +1,31 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const users = JSON.parse(localStorage.getItem("users")) || [];
-    const tableBody = document.getElementById("user-table-body");
+    let users = JSON.parse(localStorage.getItem("users"));
 
+    // BƯỚC 2: KHỞI TẠO DỮ LIỆU NẾU CẦN
+    // Di chuyển khối 'if' ra khỏi renderTable và đặt nó ở đây!
+    if (!users || users.length === 0) {
+        users = [{
+            name: "admin",
+            email: "admin@gmail.com",
+            phone: "0123456789",
+            password: "Admin@123",
+            role: "manager"
+        }];
+        // Lưu lại ngay lập tức
+        localStorage.setItem("users", JSON.stringify(users));
+    }
+
+    // BƯỚC 3: BÂY GIỜ MỚI BẮT ĐẦU CÁC LOGIC KHÁC
+    const tableBody = document.getElementById("user-table-body");
     const editModalElement = document.getElementById('editUserModal');
     const editModal = new bootstrap.Modal(editModalElement);
 
+    // Hàm renderTable bây giờ chỉ có một nhiệm vụ: HIỂN THỊ
     function renderTable() {
         tableBody.innerHTML = "";
+
+        // Vì logic khởi tạo đã chạy, chúng ta không cần kiểm tra lại ở đây nữa
+        // Chúng ta chỉ cần kiểm tra xem sau tất cả, mảng có rỗng không
         if (users.length === 0) {
             const emptyRow = document.createElement("tr");
             emptyRow.innerHTML = `<td colspan="5" class="text-center fst-italic text-secondary">Không có dữ liệu người dùng.</td>`;
@@ -14,21 +33,23 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             users.forEach((user, index) => {
                 const row = document.createElement("tr");
+                const isManager = user.role === 'manager';
+                const disabledButtons = isManager ? 'disabled' : '';
+
                 row.innerHTML = `
                     <th scope="row">${index + 1}</th>
-                    <td>${user.name}</td>
+                    <td>${user.name} ${isManager ? '<span class="badge bg-primary">Manager</span>' : ''}</td>
                     <td>${user.email}</td>
                     <td>${user.phone}</td>
                     <td class="text-center">
-                        <button class="btn btn-warning btn-sm btn-edit" data-index="${index}">Sửa</button>
-                        <button class="btn btn-danger btn-sm btn-delete" data-index="${index}">Xóa</button>
+                        <button class="btn btn-warning btn-sm btn-edit" data-index="${index}" ${disabledButtons}>Sửa</button>
+                        <button class="btn btn-danger btn-sm btn-delete" data-index="${index}" ${disabledButtons}>Xóa</button>
                     </td>
                 `;
                 tableBody.appendChild(row);
             });
         }
     }
-
     tableBody.addEventListener('click', function (event) {
         const target = event.target;
 
