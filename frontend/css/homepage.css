@@ -1,5 +1,6 @@
 body {
     width: 100%;
+    font-family: 'Lato', sans-serif;
 }
 
 .homepage-1 {
@@ -277,7 +278,13 @@ body {
     border: #007CC7 solid 1px;
     font-weight: bold;
 }
-
+.used_css {
+    font-size: 14px;
+    background-color: #0B0C10;
+    color: #007CC7;
+    border: #007CC7 solid 1px;
+    font-weight: bold;
+}
 .card-title {
     display: -webkit-box;
     -webkit-line-clamp: 2;
@@ -445,4 +452,80 @@ body {
 .aboutus-content {
     padding-left: 10px !important;
     padding-right: 10px !important;
+}
+/* --- Styles to match YOUR original slider design --- */
+
+.price-slider-container {
+    padding-top: 10px;
+    /* Add some space for the larger handles */
+    padding-bottom: 10px;
+}
+
+/* This is your ".double_range_slider" but made responsive */
+.custom-range-slider {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    /* Your original height */
+    background-color: #dddddd;
+    /* Your original track background */
+    border-radius: 20px;
+    /* Your original border-radius */
+    display: flex;
+    align-items: center;
+}
+
+/* This is your ".range_track" with the blue color */
+.range-track {
+    position: absolute;
+    height: 100%;
+    background-color: #0d6efd;
+    /* Blue color */
+    border-radius: 20px;
+    /* Your original border-radius */
+}
+
+/* This is your "input" style, made more specific */
+.custom-range-slider input[type=range] {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    /* Match the track height */
+    background: none;
+    pointer-events: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+/* --- THIS IS YOUR EXACT THUMB/BUTTON DESIGN, BUT COLORED BLUE --- */
+.custom-range-slider input[type=range]::-webkit-slider-thumb {
+    height: 25px;
+    /* Your original height */
+    width: 25px;
+    /* Your original width */
+    border-radius: 50%;
+    border: 3px solid #8ec3ff;
+    /* Light blue border (like your light green) */
+    background-color: #0d6efd;
+    /* Blue background */
+    pointer-events: auto;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.custom-range-slider input[type=range]::-moz-range-thumb {
+    height: 25px;
+    /* Your original height */
+    width: 25px;
+    /* Your original width */
+    border-radius: 50%;
+    border: 3px solid #8ec3ff;
+    /* Light blue border */
+    background-color: #0d6efd;
+    /* Blue background */
+    pointer-events: auto;
+    -moz-appearance: none;
+    cursor: pointer;
 }
